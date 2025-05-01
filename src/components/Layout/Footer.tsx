@@ -36,6 +36,7 @@ const Footer: React.FC = () => {
             </a>
             <a 
               href="mailto:joaopedrohenriqueplinta@gmail.com" 
+              target="_blank"
               className="text-gray-400 hover:text-primary-400 transition-colors duration-300"
               aria-label="Email"
             >
