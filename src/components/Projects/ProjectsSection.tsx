@@ -17,7 +17,7 @@ const ProjectsSection: React.FC = () => {
       );
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -27,7 +27,7 @@ const ProjectsSection: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-sm font-medium text-primary-500 mb-2">MEUS TRABALHOS</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-dark mb-4">Projetos Recentes</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-dark dark:text-white mb-4">Projetos Recentes</h3>
           <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
         </motion.div>
 
@@ -36,7 +36,7 @@ const ProjectsSection: React.FC = () => {
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
               activeFilter === 'all' 
                 ? 'bg-primary-500 text-white' 
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
             }`}
             onClick={() => setActiveFilter('all')}
             whileHover={{ scale: 1.05 }}
@@ -51,7 +51,7 @@ const ProjectsSection: React.FC = () => {
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 activeFilter === tech
                   ? 'bg-primary-500 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
               }`}
               onClick={() => setActiveFilter(tech)}
               whileHover={{ scale: 1.05 }}

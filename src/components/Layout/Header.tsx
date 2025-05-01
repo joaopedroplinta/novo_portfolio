@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon} from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const navItems = [
@@ -14,6 +14,12 @@ const navItems = [
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return document.documentElement.classList.contains('dark');
+    }
+    return false;
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +30,26 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem('darkMode', (!darkMode).toString());
+  };
+
+  useEffect(() => {
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (savedDarkMode) {
+      document.documentElement.classList.add('dark');
+      setDarkMode(true);
+    }
+  }, []);
+
   return (
     <motion.header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm py-3' : 'bg-transparent py-5'
+        scrolled 
+          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm py-3' 
+          : 'bg-transparent py-5'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -44,8 +66,7 @@ const Header: React.FC = () => {
           João Plinta
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -55,27 +76,51 @@ const Header: React.FC = () => {
               offset={-70}
               duration={500}
               className={`${
-                scrolled ? 'text-dark' : 'text-dark'
+                scrolled ? 'text-dark dark:text-white' : 'text-dark dark:text-white'
               } hover:text-primary-500 cursor-pointer transition-all duration-300 font-medium`}
             >
               {item.name}
             </Link>
           ))}
-        </nav>
+          
+          <button
+            onClick={toggleDarkMode}
+            className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            {darkMode ? (
+              <Sun className="text-white" size={20} />
+            ) : (
+              <Moon className="text-gray-800" size={20} />
+            )}
+          </button>
+        </div>
 
-        {/* Mobile Navigation Toggle */}
-        <button
-          className="md:hidden text-dark focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center space-x-4">
+          <button
+            onClick={toggleDarkMode}
+            className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            {darkMode ? (
+              <Sun className="text-white" size={20} />
+            ) : (
+              <Moon className="text-gray-800" size={20} />
+            )}
+          </button>
+          
+          <button
+            className="text-dark dark:text-white focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
       {isOpen && (
         <motion.div
-          className="md:hidden bg-white shadow-lg absolute w-full"
+          className="md:hidden bg-white dark:bg-gray-900 shadow-lg absolute w-full"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
@@ -91,7 +136,7 @@ const Header: React.FC = () => {
                 offset={-70}
                 duration={500}
                 onClick={() => setIsOpen(false)}
-                className="py-3 text-dark hover:text-primary-500 cursor-pointer transition-all duration-300 font-medium border-b border-gray-100 last:border-none"
+                className="py-3 text-dark dark:text-white hover:text-primary-500 cursor-pointer transition-all duration-300 font-medium border-b border-gray-100 dark:border-gray-700 last:border-none"
               >
                 {item.name}
               </Link>

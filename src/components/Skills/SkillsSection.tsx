@@ -22,7 +22,7 @@ const SkillsSection: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -32,7 +32,7 @@ const SkillsSection: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-sm font-medium text-primary-500 mb-2">COMPETÊNCIAS</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-dark mb-4">Minhas Habilidades</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-dark dark:text-white mb-4">Minhas Habilidades</h3>
           <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
         </motion.div>
 

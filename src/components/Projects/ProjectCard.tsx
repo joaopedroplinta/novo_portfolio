@@ -11,7 +11,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <motion.div
-      className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+      className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -26,14 +26,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       </div>
       
       <div className="p-6">
-        <h3 className="text-xl font-bold text-dark mb-2">{project.title}</h3>
-        <p className="text-gray-600 mb-4">{project.description}</p>
+        <h3 className="text-xl font-bold text-dark dark:text-white mb-2">{project.title}</h3>
+        <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
         
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="text-xs font-medium bg-gray-100 px-3 py-1 rounded-full text-gray-700"
+              className="text-xs font-medium bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full text-gray-700 dark:text-gray-300"
             >
               {tech}
             </span>
@@ -46,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-gray-700 hover:text-primary-500 transition-colors duration-300"
+              className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300"
             >
               <Github size={18} className="mr-1" />
               <span className="text-sm">Código</span>
@@ -58,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-gray-700 hover:text-primary-500 transition-colors duration-300"
+              className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300"
             >
               <ExternalLink size={18} className="mr-1" />
               <span className="text-sm">Demo</span>

@@ -4,7 +4,7 @@ import { Code, GraduationCap, FlaskConical, Smartphone } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-sm font-medium text-primary-500 mb-2">CONHEÇA MAIS</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-dark mb-4">Sobre Mim</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-dark dark:text-white mb-4">Sobre Mim</h3>
           <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
         </motion.div>
 
@@ -41,15 +41,15 @@ const AboutSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h4 className="text-2xl font-bold text-dark mb-4">
+            <h4 className="text-2xl font-bold text-dark dark:text-white mb-4">
               Estudante de Ciência da Computação e Desenvolvedor
             </h4>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               Sou estudante de Bacharelado em Ciência da Computação no IFPR - Campus Pinhais, 
               atualmente no 5º período. Desde cedo, tenho fascínio por tecnologia e como ela pode 
               transformar a sociedade.
             </p>
-            <p className="text-gray-700 mb-8 leading-relaxed">
+            <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
               Trabalho como estagiário na Polícia Científica do Paraná, onde aplico meus 
               conhecimentos em desenvolvimento de software para criar soluções que auxiliam 
               nas atividades forenses e também atuo no suporte de sistemas. Essa experiência tem me proporcionado um entendimento 
@@ -59,42 +59,42 @@ const AboutSection: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-start">
-                <div className="mr-4 bg-primary-100 p-3 rounded-lg">
+                <div className="mr-4 bg-primary-100 dark:bg-primary-900/50 p-3 rounded-lg">
                   <Code size={20} className="text-primary-500" />
                 </div>
                 <div>
-                  <h5 className="font-semibold mb-1">Desenvolvimento Web</h5>
-                  <p className="text-gray-600 text-sm">React, Node.js, TypeScript</p>
+                  <h5 className="font-semibold mb-1 dark:text-white">Desenvolvimento Web</h5>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">React, Node.js, TypeScript</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="mr-4 bg-primary-100 p-3 rounded-lg">
+                <div className="mr-4 bg-primary-100 dark:bg-primary-900/50 p-3 rounded-lg">
                   <Smartphone size={20} className="text-primary-500" />
                 </div>
                 <div>
-                  <h5 className="font-semibold mb-1">Desenvolvimento Mobile</h5>
-                  <p className="text-gray-600 text-sm">React Native, Expo</p>
+                  <h5 className="font-semibold mb-1 dark:text-white">Desenvolvimento Mobile</h5>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">React Native, Expo</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="mr-4 bg-primary-100 p-3 rounded-lg">
+                <div className="mr-4 bg-primary-100 dark:bg-primary-900/50 p-3 rounded-lg">
                   <FlaskConical size={20} className="text-primary-500" />
                 </div>
                 <div>
-                  <h5 className="font-semibold mb-1">Análise de Dados</h5>
-                  <p className="text-gray-600 text-sm">Python, Pandas, SQL</p>
+                  <h5 className="font-semibold mb-1 dark:text-white">Análise de Dados</h5>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">Python, Pandas, SQL</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="mr-4 bg-primary-100 p-3 rounded-lg">
+                <div className="mr-4 bg-primary-100 dark:bg-primary-900/50 p-3 rounded-lg">
                   <GraduationCap size={20} className="text-primary-500" />
                 </div>
                 <div>
-                  <h5 className="font-semibold mb-1">Formação Acadêmica</h5>
-                  <p className="text-gray-600 text-sm">Bacharelado em Ciência da Computação</p>
+                  <h5 className="font-semibold mb-1 dark:text-white">Formação Acadêmica</h5>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">Bacharelado em Ciência da Computação</p>
                 </div>
               </div>
             </div>

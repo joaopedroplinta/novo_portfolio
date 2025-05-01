@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark text-white py-8">
+    <footer className="bg-dark dark:bg-gray-950 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
@@ -36,7 +36,6 @@ const Footer: React.FC = () => {
             </a>
             <a 
               href="mailto:joaopedrohenriqueplinta@gmail.com" 
-              target="_blank"
               className="text-gray-400 hover:text-primary-400 transition-colors duration-300"
               aria-label="Email"
             >
