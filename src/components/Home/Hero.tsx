@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com/in/joaopedroplinta"
+                href="https://www.linkedin.com/in/joao-pedro-plinta/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-primary-500 transition-all duration-300"
