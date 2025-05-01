@@ -51,6 +51,7 @@ const ContactSection: React.FC = () => {
                   <h5 className="font-semibold mb-1">Email</h5>
                   <a 
                     href="mailto:joaopedrohenriqueplinta@gmail.com" 
+                    target="_blank"
                     className="text-gray-600 hover:text-primary-500 transition-colors"
                   >
                     joaopedrohenriqueplinta@gmail.com
