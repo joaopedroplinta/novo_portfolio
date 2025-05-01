@@ -13,10 +13,10 @@ const SkillBar: React.FC<SkillBarProps> = ({ name, level, index }) => {
   return (
     <div className="mb-3">
       <div className="flex justify-between mb-1">
-        <span className="text-gray-700 font-medium">{name}</span>
-        <span className="text-gray-500 text-sm">{level}/5</span>
+        <span className="text-gray-700 dark:text-gray-300 font-medium">{name}</span>
+        <span className="text-gray-500 dark:text-gray-400 text-sm">{level}/5</span>
       </div>
-      <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+      <div className="h-2 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
         <motion.div
           className="h-full bg-gradient-to-r from-primary-400 to-primary-500 rounded-full"
           initial={{ width: 0 }}
