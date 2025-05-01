@@ -41,6 +41,14 @@ const projects: Project[] = [
     image: "https://pt-static.z-dn.net/files/dcb/f6acae6751b7ab00a60d2e35dd73bfd2.png",
     technologies: ["C++"],
     githubUrl: "https://github.com/joaopedroplinta/algoritimo_eleicao",
+  },
+  {
+    id: 5,
+    title: "Análise Léxica",
+    description: "consiste na implementação de um analisador léxico utilizando a ferramenta Flex, como parte da disciplina de Linguagens Formais e Autômatos. O objetivo é processar e validar a estrutura léxica de códigos escritos na linguagem C--",
+    image: "https://matriculas.estacio.br/blog/wp-content/uploads/2019/08/ciencia-da-computacao-o-que-se-aprende-faculdade-estacio.jpg",
+    technologies: ["C", "Lex"],
+    githubUrl: "https://github.com/joaopedroplinta/analisador-lexico"
   }
 ];
 
