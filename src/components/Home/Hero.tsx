@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
                 Desenvolvedor Full Stack
               </h2>
               <p className="text-gray-700 dark:text-gray-300 text-lg mb-8 max-w-xl">
-                Estudante de Ciência da Computação e estagiário na Polícia Científica do Paraná.
+                Estudante de Ciência da Computação e estagiário na Celepar.
                 Apaixonado por desenvolvimento web, mobile e análise de dados.
               </p>
             </motion.div>
