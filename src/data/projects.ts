@@ -46,9 +46,25 @@ const projects: Project[] = [
     id: 5,
     title: "Análise Léxica",
     description: "consiste na implementação de um analisador léxico utilizando a ferramenta Flex, como parte da disciplina de Linguagens Formais e Autômatos. O objetivo é processar e validar a estrutura léxica de códigos escritos na linguagem C--",
-    image: "https://matriculas.estacio.br/blog/wp-content/uploads/2019/08/ciencia-da-computacao-o-que-se-aprende-faculdade-estacio.jpg",
+    image: "https://programandomais.wordpress.com/wp-content/uploads/2013/10/url.jpg",
     technologies: ["C", "Lex"],
     githubUrl: "https://github.com/joaopedroplinta/analisador-lexico"
+  },
+  {
+    id: 6,
+    title: "Modelo Mnist CNN Classifier",
+    description: "Este projeto implementa uma rede neural convolucional (CNN) para reconhecer dígitos manuscritos utilizando o dataset MNIST. O modelo é desenvolvido em TensorFlow/Keras, e inclui callbacks de Early Stopping e Model Checkpoint para garantir o melhor desempenho possível durante o treinamento.",
+    image: "https://cdn.botpenguin.com/assets/website/MNIST_Dataset_3f291ce69e.webp",
+    technologies: ["Python", "TensorFlow", "Keras"],
+    githubUrl: "https://github.com/joaopedroplinta/modelo_mnist"
+  },
+  {
+    id: 7,
+    title: "NumVision",
+    description: "Aplicação fullstack que permite desenhar dígitos em um canvas e classificá-los usando um modelo CNN treinado no MNIST.",
+    image: "https://github.com/joaopedroplinta/NumVision/raw/main/img/numvision.png",
+    technologies: ["React", "TypeScript", "TailwindCSS", "Python", "TensorFlow", "Keras", "FastAPI"],
+    githubUrl: "https://github.com/joaopedroplinta/NumVision"
   }
 ];
 
