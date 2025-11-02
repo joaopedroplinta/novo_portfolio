@@ -49,10 +49,15 @@ const AboutSection: React.FC = () => {
               atualmente no 5º período. Desde cedo, tenho fascínio por tecnologia e como ela pode 
               transformar a sociedade.
             </p>
+            <p className='text-gray-700 dark:text-gray-300 mb-8 leading-relaxed'>
+              Atualmente, sou estagiário na Celepar (Companhia de Tecnologia da Informação e Comunicação do Paraná), onde tenho a oportunidade de aplicar meus conhecimentos em projetos reais, 
+              colaborando com uma equipe talentosa e aprendendo constantemente sobre as melhores práticas 
+              de desenvolvimento de software.
+            </p>
             <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              Trabalho como estagiário na Polícia Científica do Paraná, onde aplico meus 
+              Já atuei como estagiário na Polícia Científica do Paraná, onde apliquei meus 
               conhecimentos em desenvolvimento de software para criar soluções que auxiliam 
-              nas atividades forenses e também atuo no suporte de sistemas. Essa experiência tem me proporcionado um entendimento 
+              nas atividades forenses e também atuei no suporte de sistemas. Essa experiência me proporciou um entendimento 
               valioso sobre como a tecnologia pode ser aplicada em contextos complexos e de 
               alta responsabilidade.
             </p>
