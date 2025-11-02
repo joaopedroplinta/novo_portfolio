@@ -19,7 +19,7 @@ const skills: Skill[] = [
   { name: "Express", level: 3, category: "backend" },
   { name: "Python", level: 4, category: "backend" },
   { name: "Django", level: 2, category: "backend" },
-  { name: "PHP", level: 2, category: "backend" },
+  { name: "PHP", level: 3, category: "backend" },
   
   // Database
   { name: "MySQL", level: 4, category: "database" },
