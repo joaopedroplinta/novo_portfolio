@@ -65,6 +65,14 @@ const projects: Project[] = [
     image: "https://github.com/joaopedroplinta/NumVision/raw/main/img/numvision.png",
     technologies: ["React", "TypeScript", "TailwindCSS", "Python", "TensorFlow", "Keras", "FastAPI"],
     githubUrl: "https://github.com/joaopedroplinta/NumVision"
+  },
+  {
+    id: 8,
+    title: "Algoritmo Simplex Duas Fases",
+    description: "Implementação do Algoritmo Simplex de Duas Fases em Python para resolver problemas de programação linear que envolvem variáveis de folga, excesso e artificiais.",
+    image: "https://miro.medium.com/v2/resize:fit:1400/1*YkX3ENcy1g8bGZQ5bWQHwg.png",
+    technologies: ["Python"],
+    githubUrl: "https://github.com/joaopedroplinta/simplex-duas-fases"
   }
 ];
 
