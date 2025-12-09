@@ -70,7 +70,7 @@ const projects: Project[] = [
     id: 8,
     title: "Algoritmo Simplex Duas Fases",
     description: "Implementação do Algoritmo Simplex de Duas Fases em Python para resolver problemas de programação linear que envolvem variáveis de folga, excesso e artificiais.",
-    image: "https://miro.medium.com/v2/resize:fit:1400/1*YkX3ENcy1g8bGZQ5bWQHwg.png",
+    image: "https://preview.redd.it/herramienta-gratuita-para-resolver-problemas-de-v0-2i1tbirztmrf1.jpg?width=640&crop=smart&auto=webp&s=ed276b018ea97918767a2785d41313a128d96e27",
     technologies: ["Python"],
     githubUrl: "https://github.com/joaopedroplinta/simplex-duas-fases"
   }
