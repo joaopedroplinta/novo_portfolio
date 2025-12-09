@@ -30,7 +30,7 @@ const projects: Project[] = [
     id: 3,
     title: "FinanTrack",
     description: "Aplicação de Finanças",
-    image: "https://www.totvs.com/wp-content/uploads/2024/04/dashboard-financeiro.jpg",
+    image: "https://github.com/joaopedroplinta/projeto-final-web/raw/main/frontend/src/assets/logo.png",
     technologies: ["React", "TypeScript", "TailwindCSS", "Node.js", "Express", "MySQL"],
     githubUrl: "https://github.com/joaopedroplinta/projeto-final-web",
   },
