@@ -23,8 +23,7 @@ const projects: Project[] = [
     description: "Sistema de notas para especialistas, onde os usuários podem criar, visualizar e excluir suas anotações.",
     image: "https://static.vecteezy.com/ti/fotos-gratis/p1/3046456-close-up-de-homem-maos-escrevendo-no-bloco-de-notas-gratis-foto.jpg",
     technologies: ["React", "TypeScript", "TailwindCSS", "PostCSS"],
-    githubUrl: "https://github.com/joaopedroplinta/nlw-expert-notes",
-    liveUrl: "https://nlw-expert-notes-sepia.vercel.app/"
+    githubUrl: "https://github.com/joaopedroplinta/nlw-expert-notes"
   },
   {
     id: 3,
